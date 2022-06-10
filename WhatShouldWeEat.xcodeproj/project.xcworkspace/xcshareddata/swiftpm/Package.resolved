@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ShortcutFoundation",
+        "repositoryURL": "https://github.com/shortcut/shortcut-foundation-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "6b3ba4ca3878aae91db09d86f06d41466592be0c",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
