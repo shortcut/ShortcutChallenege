@@ -48,9 +48,11 @@ struct ContentView: View {
                         List {
                             ForEach(vm.savedFood, id: \.id) { food in
                                 HStack {
-                                    Text(food.dish)
+                                    FoodRow(food: food)
+                                    
+                                    /*Text(food.dish)
                                         .font(.system(size: 25))
-                                        .fontWeight(.semibold)
+                                        .fontWeight(.semibold)*/
                                     Spacer()
                                 }
                                 .padding(5)
@@ -80,9 +82,8 @@ struct ContentView: View {
                         List {
                             ForEach(vm.savedDesserts, id: \.id) { dessert in
                                 HStack {
-                                    Text(dessert.variety)
-                                        .font(.system(size: 25))
-                                        .fontWeight(.semibold)
+                                    DessertRow(dessert: dessert)
+                                  
                                     Spacer()
                                 }
                                 .padding(5)
@@ -111,9 +112,9 @@ struct ContentView: View {
                         List {
                             ForEach(vm.savedCoffees, id: \.id) { coffee in
                                 HStack {
-                                    Text(coffee.variety)
-                                        .font(.system(size: 25))
-                                        .fontWeight(.semibold)
+                                    
+                                    CoffeeRow(coffee: coffee)
+                                    
                                     Spacer()
                                 }
                                 .padding(5)
@@ -150,7 +151,7 @@ struct ContentView: View {
                         showCoffee = false
 
                         if showFavorites == false {
-                            vm.getFood(getFood: true, getDessert: false, getCoffee: false)
+                            vm.getDish(getFood: true, getDessert: false, getCoffee: false)
                         }
                     }) {
                         Text("Food")
@@ -166,7 +167,7 @@ struct ContentView: View {
                         showCoffee = false
 
                         if showFavorites == false {
-                            vm.getFood(getFood: false, getDessert: true, getCoffee: false)
+                            vm.getDish(getFood: false, getDessert: true, getCoffee: false)
                         }
                     }) {
                         Text("Dessert")
@@ -182,7 +183,7 @@ struct ContentView: View {
                         showCoffee = true
 
                         if showFavorites == false {
-                            vm.getFood(getFood: false, getDessert: false, getCoffee: true)
+                            vm.getDish(getFood: false, getDessert: false, getCoffee: true)
                         }
                     }) {
                         Text("Coffee")

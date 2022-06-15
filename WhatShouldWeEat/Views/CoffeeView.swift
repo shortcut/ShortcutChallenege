@@ -15,17 +15,29 @@ struct CoffeeView: View {
             Image("coffee")
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
+
             Text(randomCoffee.variety)
                 .font(.system(size: 30))
                 .fontWeight(.bold)
                 .padding(.bottom)
-            Text("Blend: " + randomCoffee.blend_name)
-                .padding(.bottom)
-            Text("Origin: " + randomCoffee.origin)
-                .padding(.bottom)
-            Text("Notes: " + randomCoffee.notes)
-                .padding(.bottom)
             
+            HStack {
+                Text("Blend: ")
+                    .fontWeight(.bold)
+                Text(randomCoffee.blend_name)
+            }.padding(.bottom)
+            
+            HStack {
+                Text("Origin: ")
+                    .fontWeight(.bold)
+                Text(randomCoffee.origin)
+            }.padding(.bottom)
+
+            HStack {
+                Text("Notes: ")
+                    .fontWeight(.bold)
+                Text(randomCoffee.notes)
+            }.padding(.bottom)            
         }
     }
 }

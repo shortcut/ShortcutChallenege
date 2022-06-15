@@ -15,7 +15,7 @@ struct WhatShouldWeEat: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
         }
     }
 }

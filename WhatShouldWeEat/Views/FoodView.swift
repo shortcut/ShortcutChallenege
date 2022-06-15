@@ -21,9 +21,23 @@ struct FoodView: View {
                 .fontWeight(.bold)
                 .padding(.bottom)
             
-            Text("Ingrident: " + randomFood.ingredient)
-                .padding(.bottom)
-            Text("Description: " + randomFood.description)
+            HStack {
+                Text("Ingrident: ")
+                    .fontWeight(.bold)
+                Text(randomFood.ingredient)
+            }.padding(.bottom)
+
+            HStack {
+                Text("Amount: ")
+                    .fontWeight(.bold)
+                Text(randomFood.measurement)
+            }.padding(.bottom)
+
+            HStack() {
+                Text("Description: ")
+                    .fontWeight(.bold)
+                Text(randomFood.description)
+            }.padding(.bottom)
                 .padding(.horizontal)
         }
     }

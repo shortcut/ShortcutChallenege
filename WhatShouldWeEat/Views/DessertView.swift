@@ -20,9 +20,19 @@ struct DessertView: View {
                 .font(.system(size: 30))
                 .fontWeight(.bold)
                 .padding(.bottom)
-            Text("Topping: " + ramdomDessert.topping)
-                .padding(.bottom)
-            Text("Flavor: " + ramdomDessert.flavor)
+            
+            HStack {
+                Text("Topping: ")
+                    .fontWeight(.bold)
+                Text(ramdomDessert.topping)
+            }.padding(.bottom)
+            
+            HStack {
+                Text("Flavour: ")
+                    .fontWeight(.bold)
+                Text(ramdomDessert.flavor)
+
+            }
         }
     }
 }

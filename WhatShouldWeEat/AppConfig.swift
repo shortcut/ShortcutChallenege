@@ -23,5 +23,9 @@ struct AppConfig: Config {
         injector.map(FoodFetcher.self) {
             FoodFetcher()
         }
+        
+        injector.map(Loggable.self) {
+            Logger()
+        }
     }
 }

@@ -18,6 +18,10 @@
 		418EC5D028475C5700EBEB9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418EC5CF28475C5700EBEB9F /* Preview Assets.xcassets */; };
 		418EC5D928475CA600EBEB9F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418EC5D828475CA600EBEB9F /* ViewModel.swift */; };
 		41919FF62848D4FF002FCBB6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41919FF52848D4FF002FCBB6 /* DataManager.swift */; };
+		41B226A028571ADC0056EFBF /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2269F28571ADC0056EFBF /* FoodRow.swift */; };
+		41B226A228571E630056EFBF /* DessertRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B226A128571E630056EFBF /* DessertRow.swift */; };
+		41B226A4285720B00056EFBF /* CoffeeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B226A3285720B00056EFBF /* CoffeeRow.swift */; };
+		41B226A6285741230056EFBF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B226A5285741230056EFBF /* StartView.swift */; };
 		41B7E926284F58F600B89B69 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7E925284F58F600B89B69 /* AppConfig.swift */; };
 		41B7E929284F6DB200B89B69 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7E928284F6DB200B89B69 /* FoodView.swift */; };
 		41B7E92B284F6DC400B89B69 /* DessertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7E92A284F6DC400B89B69 /* DessertView.swift */; };
@@ -36,6 +40,10 @@
 		418EC5CF28475C5700EBEB9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		418EC5D828475CA600EBEB9F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		41919FF52848D4FF002FCBB6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		41B2269F28571ADC0056EFBF /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
+		41B226A128571E630056EFBF /* DessertRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertRow.swift; sourceTree = "<group>"; };
+		41B226A3285720B00056EFBF /* CoffeeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeRow.swift; sourceTree = "<group>"; };
+		41B226A5285741230056EFBF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		41B7E925284F58F600B89B69 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		41B7E928284F6DB200B89B69 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		41B7E92A284F6DC400B89B69 /* DessertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertView.swift; sourceTree = "<group>"; };
@@ -104,13 +112,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		41B2269E28571AC30056EFBF /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				41B2269F28571ADC0056EFBF /* FoodRow.swift */,
+				41B226A128571E630056EFBF /* DessertRow.swift */,
+				41B226A3285720B00056EFBF /* CoffeeRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
 		41B7E927284F6D8C00B89B69 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41B2269E28571AC30056EFBF /* Rows */,
 				418EC5CA28475C5500EBEB9F /* ContentView.swift */,
 				41B7E928284F6DB200B89B69 /* FoodView.swift */,
 				41B7E92A284F6DC400B89B69 /* DessertView.swift */,
 				41B7E92C284F6DE700B89B69 /* CoffeeView.swift */,
+				41B226A5285741230056EFBF /* StartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,11 +211,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B226A028571ADC0056EFBF /* FoodRow.swift in Sources */,
 				41B7E929284F6DB200B89B69 /* FoodView.swift in Sources */,
 				418C91BA2849F7E3008A921E /* FoodFetcher.swift in Sources */,
+				41B226A6285741230056EFBF /* StartView.swift in Sources */,
+				41B226A228571E630056EFBF /* DessertRow.swift in Sources */,
 				418EC5CB28475C5500EBEB9F /* ContentView.swift in Sources */,
 				41B7E92B284F6DC400B89B69 /* DessertView.swift in Sources */,
 				41B7E926284F58F600B89B69 /* AppConfig.swift in Sources */,
+				41B226A4285720B00056EFBF /* CoffeeRow.swift in Sources */,
 				418C91BF2849FB3F008A921E /* Dessert.swift in Sources */,
 				41919FF62848D4FF002FCBB6 /* DataManager.swift in Sources */,
 				41B7E92D284F6DE700B89B69 /* CoffeeView.swift in Sources */,
